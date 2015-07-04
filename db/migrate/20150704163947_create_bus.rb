@@ -8,7 +8,10 @@ class CreateBus < ActiveRecord::Migration
         t.text       :body_no
         t.text       :plate_no
         t.integer    :capacity
+        t.integer    :status
         t.timestamps null: false
     end
   end
+
+
 end

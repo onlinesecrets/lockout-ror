@@ -54,8 +54,9 @@ ActiveRecord::Schema.define(version: 20150704163947) do
     t.text     "body_no",    limit: 65535
     t.text     "plate_no",   limit: 65535
     t.integer  "capacity",   limit: 4
-    t.datetime "created_at",               null: false
-    t.datetime "updated_at",               null: false
+    t.integer  "status",     limit: 4,     default: 0, null: false
+    t.datetime "created_at",                           null: false
+    t.datetime "updated_at",                           null: false
   end
 
   create_table "companies", force: :cascade do |t|
